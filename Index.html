@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="asset/favicon.ico" />
+    <title>Roundtar.id</title>
+    <link rel="stylesheet" href="style-order-grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grid-container">
+    <header>
+      <nav class="sticky">
+        <p>
+          <a href="about.html">About</a> <a href="history.html">History</a>
+          <a href="Index.html">Order</a>
+        </p>
+        <h1>Roundtar.id</h1>
+        <p><a href="signin.html">Login</a><a href="signup.html">Regist</a></p>
+      </nav>
+    </header>
+    <main>
+      <picture class="cover-photos">
+        <div class="piccover">
+          <img
+            src="asset/landscapepie.jpg"
+            srcset="asset/landscapepie.jpg 501w, asset\mobilepie.jpg 500w"
+            sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        </div>
+        <div class="hero-text">
+          <h2>ORDER HERE</h2>
+          <p>"Lets Order your Roundtar"</p>
+        </div>
+      </picture>
+      <section class="content-cards">
+        <ul class="order-list">
+          <li class="order-card">
+            <div class="image-container">
+              <img src="asset/lontarsusu.png" alt="lontar susu" />
+            </div>
+            <label for="order">LONTAR ORIGINAL</label>
+            <input type="checkbox" id="order" value="LontarOri" />
+            <input type="number" min="0" placeholder="Jumlah Lontar?" />
+          </li>
+          <li class="order-card">
+            <div class="image-container">
+              <img
+                class="center-orderimage"
+                src="asset/lontarorikeju.png"
+                alt="lontar ori keju"
+              />
+            </div>
+            <label for="order">LONTAR ORIGINAL + KEJU</label>
+            <input type="checkbox" id="order" value="LontarOriK" />
+            <input type="number" min="0" placeholder="Jumlah Lontar?" />
+          </li>
+          <li class="order-card">
+            <div class="image-container">
+              <img src="asset/lontar coklat.png" alt="lontar coklat ori" />
+            </div>
+            <label for="order">LONTAR COKLAT</label>
+            <input type="checkbox" id="order" value="LontarCo" />
+            <input type="number" min="0" placeholder="Jumlah Lontar?" />
+          </li>
+          <li class="order-card">
+            <div class="image-container">
+              <img src="asset/lontarmilo.png" alt="lontar coklat" />
+            </div>
+            <label for="order">LONTAR COKLAT + KEJU</label>
+            <input type="checkbox" id="order" value="LontarCoK" />
+            <input type="number" min="0" placeholder="Jumlah Lontar?" />
+          </li>
+        </ul>
+      </section>
+      <section class="form-location">
+        <br />
+        <br />
+        <div class="order-card">
+          <label id="comments" for="comments">Request pesanan:</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="extra keju/extra susu"
+          ></textarea>
+          <label for="address">Alamat Sekarang</label>
+          <input type="radio" id="address" name="alamat" value="inputgmaps" />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.6603557845326!2d131.25953218430692!3d-0.8780520730433627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5eab001494415d%3A0x15c7cb2f18e5335c!2sAmi%20Chashezy!5e1!3m2!1sid!2sid!4v1707397142347!5m2!1sid!2sid"
+            width="300"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          <label for="address2">Masukkan Alamat Manual</label>
+          <input type="radio" id="address2" name="alamat" value="inputmanual" />
+          <textarea
+            name="alamat"
+            id="address2"
+            cols="30"
+            rows="10"
+            placeholder="JL.Jalan RT RW (rumah warna putih)"
+            class="order-card"
+          ></textarea>
+          <input class="submit-but" submit="" type="submit" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="prevnext">
+        <a href="history.html" class="previous round">&#8249;</a>
+        <a href="Index.html" class="next round">&#8250;</a>
+      </section>
+      (Developer)<br />
+      <a href="">ALVARO SEPTRA DOMINGGO NAUW</a>
+    </footer>
+  </body>
+</html>
